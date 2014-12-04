@@ -1,0 +1,114 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	min-height:100%;
+	background: -webkit-radial-gradient(center, ellipse cover, #666 0%,#333333 200%);
+}
+
+#cardContainer{
+	padding-top:20px;
+}
+
+#cardContainer .card{
+	border-radius:5px;
+	width:240px;
+	height:120px;
+	margin:10px auto;
+	box-shadow: -3px 3px 15px rgba(0,0,0,.5);
+	position:relative;
+}
+#cardContainer .card.blue{
+	background: -webkit-linear-gradient(250deg, #55B5DB 0%,#148CBD 100%);
+	color: rgb(141, 214, 248);
+}
+#cardContainer .card.red{
+	background: -webkit-linear-gradient(250deg, #EC6767 0%,#8B3C3C 100%);
+	color: rgb(255, 181, 181);
+}
+#cardContainer .card.yellow{
+	background: -webkit-linear-gradient(250deg, #F3E866 0%,#9E965B 100%);
+	color: rgb(158, 152, 17);
+}
+#cardContainer .card.green{
+	background: -webkit-linear-gradient(250deg, #3CC277 0%,#1F7E58 100%);
+	color: rgb(170, 233, 170);
+}
+#cardContainer .card.pink{
+	background: -webkit-linear-gradient(250deg, #FFBABA 0%,#C95842 100%);
+	color: rgb(255, 214, 195);
+}
+#cardContainer .card.purple{
+	background: -webkit-linear-gradient(250deg, #FBCBFF 0%,#CC4EDD 100%););
+	color: rgb(162, 76, 255);
+}
+#cardContainer .card.card-empty{
+	width:238px;
+	height:118px;
+	border:1px dashed #999;
+	background:transparent;
+	box-shadow:none;
+	cursor:pointer;
+}
+#cardContainer .card.card-empty:hover,
+#cardContainer .card.card-empty.active{
+	background:rgba(128,128,128,.5);
+}
+#cardContainer .card .title{
+	font-family: sans-serif;
+	font-weight: normal;
+	line-height: 3em;
+	font-size: 16px;
+	padding-left: 20px;
+	/*text-shadow: 0px 0px 3px #B6B6B6,1px 1px #4B4B4B;*/
+}
+#cardContainer .card.card-empty .title{
+	color:white;
+	font-size:14px;
+	text-align:center;
+	padding:0;
+}
+#cardContainer .card .number{
+	margin: 10px auto;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	letter-spacing: .5em;
+}
+#cardContainer .card .count{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-family: sans-serif;
+	color: yellow;
+}
+#cardContainer .card .delete{
+	font-family: sans-serif;
+	font-size: 20px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	background: #333;
+	line-height: 16px;
+	border-radius: 12px;
+	border: 2px solid #666;
+	opacity:0;
+	cursor:pointer;
+	-webkit-transition:opacity .2s;
+}
+#cardContainer .card:hover .delete{
+	opacity:.9;
+}
+#cardContainer .card:hover .delete:hover{
+	opacity:1;
+}
