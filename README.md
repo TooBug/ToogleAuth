@@ -19,3 +19,13 @@ Google Authenticator是Google实现的一套用于增强账户安全的两步验
 ## 截图
 
 ![screenshot](./screenshot.png)
+
+## 下载和运行
+
+项目基于Atom-Shell开发，使用时将源码放入Atom-Shell的app目录即可，使用前需要使用npm安装依赖：
+
+```sh
+npm install onceler zxing
+```
+
+二进制版本（目前只有Mac）：<http://pan.baidu.com/s/1jG1g0EM>
